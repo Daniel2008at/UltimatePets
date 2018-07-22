@@ -1,0 +1,46 @@
+######################################################################
+#__________               ___ ___                .__   __  .__       #
+#\______   \__ __ ___.__./   |   \   ____ _____  |  |_/  |_|  |__    #
+# |    |  _/  |  <   |  /    ~    \_/ __ \\__  \ |  |\   __\  |  \   #
+# |    |   \  |  /\___  \    Y    /\  ___/ / __ \|  |_|  | |   Y  \  #
+# |______  /____/ / ____|\___|_  /  \___  >____  /____/__| |___|  /  #
+#        \/       \/           \/       \/     \/               \/   #
+######################################################################
+
+# # In this YAML File you can configure the colors and the name of the GUI in the BuyHealth menu.
+
+name: '&6Buy health' # Name of the GUI
+rows: 1 # The rows are the total of slot that you want into your GUI. Due to Minecraft limitations you can use a maximum of 6 rows.
+
+items: 
+  info:
+    name: '&cHealth info' # The name of the item. You can use the Bukkit Colors for customize them.
+    material: BOOK # The material to use in the GUI
+    data: 0 # Useless. Don't use this since the items doesn't have a data except for the Mobs.
+    amount: 1 # The amount of items to display in the GUI
+    slot: 4 # The slot where you want to display your item
+    lore: # Here you can setup the Lore of the item, please do not delete these 2 placeholders under this comment.
+      - '&cPrice: &6%health_price' # The price of this Upgrade
+      - '&cAmount: &6%health_amount' # The amount of the Health
+    actions:
+  buyHealth:
+    name: '&cBuy Health' # The name of the item. You can use the Bukkit colors for customize them.
+    material: STAINED_GLASS_PANE # The material to use in the GUI
+    data: 5 # The data of the item.
+    amount: 1 # The amount of item to display in the GUI
+    slot: 2 # The slot where you want to display your item
+    lore: # Here you can setup the Lore of the item, Feel free to add infinite message to show in the Lore.
+    - '&cClicking this item you will buy the health'
+    actions:
+    - 'BUY-HEALTH' # This action will buy the Health for your pet.
+    - 'CLOSE-INVENTORY' # This action will close the inventory of the BuyHealth
+  cancelBuy:
+    name: '&cCancel health buy'
+    material: STAINED_GLASS_PANE # The material to use in the GUI
+    data: 14 # The data of the item
+    amount: 1 # The amount of the item to display in the GUI
+    slot: 6 # The slot where you want to display your item
+    lore: # Here you can setup the Lore of the item, Feel free to add infinite message to show in the Lore.
+    - '&cClick this item for cancel the buy action' 
+    actions:
+    - 'CLOSE-INVENTORY' # This action will close the inventory of the cancelBuy 

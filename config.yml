@@ -1,0 +1,181 @@
+#########################################################################################################
+# ____ ___.__   __  .__                __        __________        __           ________     _______    #
+# |    |   \  |_/  |_|__| _____ _____ _/  |_  ____\______   \ _____/  |_  ______ \_____  \    \   _  \  #
+# |    |   /  |\   __\  |/     \\__  \\   __\/ __ \|     ___// __ \   __\/  ___/  /  ____/    /  /_\  \ #
+# |    |  /|  |_|  | |  |  Y Y  \/ __ \|  | \  ___/|    |   \  ___/|  |  \___ \  /       \    \  \_/   \#
+# |______/ |____/__| |__|__|_|  (____  /__|  \___  >____|    \___  >__| /____  > \_______ \ /\ \_____  /#
+#                            \/     \/          \/              \/          \/          \/ \/       \/  #
+#########################################################################################################							
+
+# Welcome in the main configuration of UltimatePets and thanks for the purchase!
+
+# Here you can configure some settings of the plugin by adapting it as you desire.
+# Do you need support? Please join our Discord Server to receive help by our support team.
+# Discord Link: https://discord.gg/Q9JrayV 
+
+version: 1 # Don't edit this or you will break the entire plugin!
+
+# The economyType string is the main payment system to use when a player buys a pet.
+# You can use two types of economy: TokenEnchant and Vault.
+# Use these strings for the economy: TOKENENCHANT - VAULT
+
+economyType: VAULT
+
+# Here you can decide the type of database to use with the plugin
+# The avaiable databases are: MongoDB,SQLite,MySQL,YAML
+# Use these string for the database: SQLITE,MONGODB,MYSQL,yaml
+
+database:
+  type: SQLITE
+  YAML:
+    type: UUID #Types: UUID - USERNAME
+    folder: 'pets' 
+  SQLite:
+    fileName: 'pets'
+  MySQL:
+    hostname: 'localhost'
+    username: 'root'
+    password: ''
+    database: 'ultimatepets'
+    port: 3306
+  MongoDB:
+    hostname: 'localhost'
+    loginDatabase: 'admin'
+    username: 'root'
+    password: ''
+    database: 'ultimatepets'
+    port: 27017
+    
+# Here you can customize the messages of the pet's display name, the maximum level that a pet can have and the respawn time.   
+    
+petInfo:
+  defaultName: '%player_name''s pet'    
+  nameFormat: '&8[&4%pet_level&8] %pet_name'
+  deathPetRespawnTime: 100 # In seconds
+   
+# Here you can customize the healthUpgrade for the pets.
+
+healthUpgrade:
+  healthPerTime: 20.0
+  price: 1000.0
+  
+# We have reached the most important settings of the plugin.
+# Please look here for more information.
+
+pets:
+  Sheep:
+    type: SHEEP # The entity name. Please check for any mistake that you do in this string before saving.
+    baby: true # If the pet can be a baby and you want it as a baby you can enable this.
+    price: 1000 # The price to pay for buy the pet.
+    baseHealth: 20 # The baseHealth is the health that the pet can have when you buy it.
+    maxHealth: 100 # The maxHealth is the health that the pet can have when that pet have reached the maximum level.
+    speed: 1.5 # This is the speed of the pet when it walks.
+  Silverfish:
+    type: SILVERFISH
+    baby: false
+    price: 1000
+    baseHealth: 20
+    maxHealth: 100
+    speed: 1.5
+  Cow:
+    type: COW
+    baby: true
+    price: 1000
+    baseHealth: 20
+    maxHealth: 100
+    speed: 1.5
+  Zombie:
+    type: ZOMBIE
+    baby: true
+    price: 1000
+    baseHealth: 20
+    maxHealth: 100
+    speed: 1.5
+  Villager:
+    type: VILLAGER
+    baby: true
+    price: 1000
+    baseHealth: 20
+    maxHealth: 100
+    speed: 1.75
+  Mcow:
+    type: MUSHROOM_COW
+    baby: true
+    price: 1000
+    baseHealth: 20
+    maxHealth: 100
+    speed: 1.75
+  Ocelot:
+    type: OCELOT
+    baby: true
+    price: 1000
+    baseHealth: 20
+    maxHealth: 100
+    speed: 1.75
+  Wolf:
+    type: WOLF
+    baby: true
+    price: 1000
+    baseHealth: 20
+    maxHealth: 100
+    speed: 1.75
+  Chicken:
+    type: CHICKEN
+    baby: true
+    price: 1000
+    baseHealth: 20
+    maxHealth: 100
+    speed: 1.75
+# Note: After you have listed the pet here you need to go in the "menus" folder and open the shopMenu.yml file for setup that correctly. 
+ 
+potionEffects:
+  DAMAGE_RESISTANCE:
+    name: '&cDamage Resistance' # The title of the effect, you can use Bukkit colors to customize them
+    levels:
+      '1': 1000 # Here you can create the levels for a specific effect, please use the following syntax: Level: Cost
+      '2': 2000
+  REGENERATION:
+    name: '&cRegeneration'
+    levels:
+      '1': 1000
+      '2': 2000
+      '3': 3000
+      '4': 4000
+  SPEED:
+    name: '&cSpeed'
+    levels:
+      '1': 1000
+      '2': 2000
+      '3': 3000
+  FIRE_RESISTANCE:
+    name: '&cFire Resistance'
+    levels:
+      '1': 1000
+      '2': 2000
+      '3': 3000
+  INCREASE_DAMAGE:
+    name: '&cStrength'
+    levels:
+      '1': 1000
+      '2': 2000
+  WATER_BREATHING:
+    name: '&cWater Breathing'
+    levels:
+      '1': 1000
+      '2': 2000
+      
+# Note: After you have listed the effect here you need to go in the "menus" folder and open the effectMenu.yml file for setup that correctly.
+
+blacklistedWords:
+- 'fuck'
+- 'dick'
+
+# Blacklist a word that a player cannot use when that use the /pet name command!
+
+blacklistedWorlds:
+- 'blacklisted_world1'
+- 'another_blacklisted_world'
+
+# Blacklist a world where your players cannot use their pets.
+
+# End of the configuration. 

@@ -1,0 +1,115 @@
+##################################################################
+#    _____                                                       #
+#   /     \   ____   ______ ___________     ____   ____   ______ # 
+#  /  \ /  \_/ __ \ /  ___//  ___/\__  \   / ___\_/ __ \ /  ___/ # 
+# /    Y    \  ___/ \___ \ \___ \  / __ \_/ /_/  >  ___/ \___ \  #
+# \____|__  /\___  >____  >____  >(____  /\___  / \___  >____  > #
+#        \/     \/     \/     \/      \//_____/      \/     \/   #
+##################################################################
+
+version: 1 # Don't edit this or you will break the entire plugin!
+
+prefix: '&8Ultimate&7Pets &9 > &3'
+
+messages:
+  petDeath: '&cYour pet is dead.'
+  petCanRespawn: '&aYour pet now can respawn.'
+  hitYourPet: '&cYou cannot hit your pet.'
+  toBlacklistedWorld: '&cYour pet was despawned because you''ve teleported to a blacklisted world'
+  effectBuy:
+    maxLevelReached: '&cYou have already reached the max level for this effect'
+    notEnoughtMoney: '&cYou don''t have enought money for buy %effect_name effect.'
+    upgradedEffect: '&aYou''ve upgraded the %effect_name to %effect_level.'
+  healthBuy:
+    maxHealthReached: '&cYour pet have already reached the max health!'
+    notEnoughMoney: '&cYou don''t have enough money for upgrade health of your pet.'
+    buyedHealth: '&aYou''ve successfully buyed health for your pet!'
+  depends:
+    factions:
+      sameFaction: '&cYou cannot hit the pet of your faction member.'
+    feudal:
+      sameFeud: '&cYou cannot hit the pet of your feud member.'
+    gangsPlus:
+      sameGang: '&cYou cannot hit the pet of your gang member.'
+    kingdoms:
+      sameKingdom: '&cYou cannot hit the pet of your kingdom member.'
+    towny:
+      sameTown: '&cYou cannot hit the pet of your town memeber.'
+    worldguard:
+      noPvP: '&cYou cannot hit a pet in no PvP region.'
+  commands:
+    noPet: '&cFor execute this command you had to have a pet.'
+    here:
+      entitySpawned: '&cThe entity is already spawned.'
+      spawned: '&aYou''ve spawned the pet'
+      blacklistedWorld: '&cYou can''t spawn the pet in this world'
+      petDeath: '&cYou cannot spawn your pet because is dead.'
+    away:
+      entityAway: '&cThe entity is already away.'
+      despawned: '&aYou''ve despawned the pet'
+    shop:
+      alreadyHaveAPet: '&cYou can have only one pet.'
+      noPermission: '&cYou don''t have the permission for buy this pet.'
+      noMoney: '&cYou don''t have enough money for buy this pet.'
+      buyedPet: '&aYou''ve successfully buyed your pet!'
+    change:
+      noPermission: '&cYou don''t have the permission for get this pet.'
+      noMoney: '&cYou don''t have enought money for get this pet.'
+      alreadyHaveThis: '&cYour pet is already of this type.'
+      changedPet: '&aYou''ve successfully changed your pet!'
+    name:
+      use: '&c/pet name <name>'
+      blacklistedWord: '&cThe pet name contains a blacklisted word.'
+      changedName: '&aPet name setted.'
+    info:
+    - '&3Name: &7%pet_name'
+    - '&3Health: &7%pet_health/%pet_maxHealth'
+    - '&3Level: &7%pet_level'
+    - '&3Respawn pet in &7%pet_deathSeconds seconds'
+    help:
+    - '&3Ultimate&7Pets &6by xQuickGlare'
+    - '&3/pet here - &7Spawn your pet'
+    - '&3/pet away - &7De-Spawn your pet'
+    - '&3/pet gui - &7Open a GUI with your pet''s info'
+    - '&3/pet shop - &7Open a shop with all pets'
+    - '&3/pet info - &7Show info of pets'
+    - '&3/pet change - &7Change your pet'
+  adminCommands:
+    give:
+      use: '&c/up give <player> <petType>'
+      playerNoOnline: '&cThe player isn''t online.'
+      playerHasPet: '&cThe player has a pet.'
+      petTypeDoesntExit: '&cThe specified pet type doesn''t exist.'
+      petGived: '&aPet was gived.'
+    delete:
+      use: '&c/up delete <player>'
+      playerNoExist: '&cThe specified player doesn''t exist.'
+      playerNoPet: '&cThe player doesn''t have a pet.'
+      petDeleted: '&aPet deleted!'
+    info:
+      use: '&c/up info <player>'
+      playerNoOnline: '&cThe player isn''t online.'
+      playerNoPet: '&cThe specified player doesn''t have a pet.'
+      list:
+      - '&3%player_name''s &7pet.'
+      - '&3Name: &7%pet_name'
+      - '&3Health: &7%pet_health/%pet_maxHealth'
+      - '&3Level: &7%pet_level'
+      - '&3Respawn pet in &7%pet_deathSeconds seconds'
+      - '&3Effects: &7%pet_effects'
+    giveEffect:
+      use: '&c/up giveEffect <player> <effectName> <level>'
+      playerNoOnline: '&cThe player isn''t online.'
+      playerNoPet: '&cThe specified player doesn''t have a pet.'
+      effectDoesntExist: '&cThe specified effect doesn''t exist.'
+      alreadyHasEffect: '&cThe specified player already has this effect.'
+      effectLevelNoExist: '&cThe specified level doesn''t exist.'
+      givedEffect: '&aEffect gived!'
+    reload: '&aConfiguration reloaded in %time ms.'
+    help:
+    - '&3Ultimate&7Pets &6Admin commands'
+    - '&3/up give - &7Give a pet to a player'
+    - '&3/up delete - &7Delete a pet of a player'
+    - '&3/up info - &7Get info of a pet'
+    - '&3/up giveEffect - &7Give an effect to a pet'
+    - '&3/up reload - &7Reload'

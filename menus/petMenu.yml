@@ -1,0 +1,95 @@
+##########################################################
+# __________        __     _____                         #
+# \______   \ _____/  |_  /     \   ____   ____  __ __   # 
+# |     ___// __ \   __\/  \ /  \_/ __ \ /    \|  |  \   #
+# |    |   \  ___/|  | /    Y    \  ___/|   |  \  |  /   #
+# |____|    \___  >__| \____|__  /\___  >___|  /____/    #
+#              \/             \/     \/     \/           #
+##########################################################
+
+name: '&6Pet GUI' # The name of the GUI
+rows: 3 # The rows are the total of slot that you want into your GUI. Due to Minecraft limitations you can use a maximum of 6 rows.
+
+items:
+  petHere:
+    name: '&6Pet here' # The name of the Pet Here item.
+    material: EMERALD # The material to use in the GUI
+    data: 0 # Useless. Don't use this since we don't use eggs in the display menu.
+    amount: 1 # The amount of items to display in the GUI
+    slot: 10 # The slot where you want to display your item.
+    lore: # Here you can setup the lore of the item in the GUI
+    - '&cWith this item you can spawn your pet'
+    actions:
+    - 'PET-TOGGLE' # This action will toggle your pet in 2 different cases: The one is the Pet here and the second is the Pet Away, look down this comment for more information about this.
+    - 'CLOSE-INVENTORY' # This action will close your inventory after you toggle your pet.
+  petAway:
+    name: '&6Pet away' # The name of the Pet Here item.
+    material: REDSTONE # The material to use in the GUI
+    data: 0 # Useless. Don't use this since we don't use eggs in the display menu
+    amount: 1 # The amount of items to display in the GUI
+    slot: 10 # The slot where you want do display your item
+    lore: # Here you can setup the lore of the item in the GUI
+    - '&cWith this item you can despawn your pet'
+    actions:
+    - 'PET-TOGGLE' # This action will remove your pet and get him away from you.
+    - 'CLOSE-INVENTORY' # This action will close your inventory.
+  petDeath:
+    name: '&6Your pet is dead' 
+    material: REDSTONE_BLOCK
+    data: 0
+    amount: 1
+    slot: 10
+    lore:
+    - '&cYour pet will respawn in: %pet_timer'
+    actions:
+    - 'PET-TOGGLE'
+    - 'CLOSE-INVENTORY'
+  buyEffects:
+    name: '&6Buy effect for your pet'
+    material: POTION
+    data: 0
+    amount: 1
+    slot: 16
+    lore:
+    - '&cClick here for upgrade'
+    - '&cyour pet.'
+    actions:
+    - 'CLOSE-INVENTORY'
+    - 'OPEN-EFFECT-MENU'
+  upgradeHealth:
+    name: '&cUpgrade your pet health!'
+    material: BLAZE_POWDER
+    data: 0
+    amount: 1
+    slot: 13
+    lore:
+    - '&cClick here for upgrade'
+    - '&cyour pet.'
+    actions:
+    - 'OPEN-HEALTH-BUY'
+  border:
+    name: '&7UltimatePets' # The border is all the glass represented by default in the plugin. Feel free to change them.
+    material: STAINED_GLASS_PANE # The material to display in the GUI, Alert: You cannot add more items than one.
+    data: 0 # Useless, don't use this since we don't use the eggs in the border.
+    amount: 1 # The amount of items to display in the GUI
+    slots: # Please select all the slots where you want to display the item in the GUI.
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26

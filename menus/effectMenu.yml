@@ -1,0 +1,107 @@
+############################################################################
+# ___________ _____  _____              __     _____                       #
+# \_   _____// ____\/ ____\____   _____/  |_  /     \   ____   ____  __ __ #
+# |    __)_\   __\\   __\/ __ \_/ ___\   __\/  \ /  \_/ __ \ /    \|  |  \ #
+# |        \|  |   |  | \  ___/\  \___|  | /    Y    \  ___/|   |  \  |  / #
+# /_______  /|__|   |__|  \___  >\___  >__| \____|__  /\___  >___|  /____/ #
+#       \/                  \/     \/             \/     \/     \/         #
+############################################################################ 
+
+# In this YAML File you can edit the Effect menu and add new effect that are list by first in the config.yml file.
+
+name: '&6Pet GUI' # The name of the GUI
+rows: 3 # The rows are the total of slot that you want into your GUI. Due to Minecraft limitations you can use a maximum of 6 rows.
+
+items:
+  Regeneration:
+    name: '&cRegeneration' # The Item name
+    material: POTION # The Material to use
+    data: 8193 #For calculate potion data use this site: https://minecraft-materials.grahamedgecombe.com/potion-calculator
+    amount: 1 # The amount to display in the GUI
+    slot: 10 # The slot where you want to display the effect selected.
+    lore:  #Here you can configure the lore of your item, you can use infinite lores for this.
+    - '&7Buy an effect:'
+    - '&cRegeneration'
+    actions: 
+    - 'BUY-EFFECT: REGENERATION' # This action will execute the buy of the Regeneration effect.
+  Resistance:
+    name: '&cResistance'
+    material: POTION
+    data: 8193 #For calculate potion data use this site: https://minecraft-materials.grahamedgecombe.com/potion-calculator
+    amount: 1
+    slot: 11
+    lore:
+    - '&7Buy an effect:'
+    - '&cResistance'
+    actions: 
+    - 'BUY-EFFECT: DAMAGE_RESISTANCE'
+  Speed:
+    name: '&cSpeed'
+    material: POTION
+    data: 8194 #For calculate potion data use this site: https://minecraft-materials.grahamedgecombe.com/potion-calculator
+    amount: 1
+    slot: 12
+    lore:
+    - '&7Buy an effect:'
+    - '&cSpeed'
+    actions: 
+    - 'BUY-EFFECT: SPEED'
+  Fresitance:
+    name: '&cFire Resistance'
+    material: POTION
+    data: 8195 #For calculate potion data use this site: https://minecraft-materials.grahamedgecombe.com/potion-calculator
+    amount: 1
+    slot: 13
+    lore:
+    - '&7Buy an effect:'
+    - '&cFire Resistance'
+    actions: 
+    - 'BUY-EFFECT: FIRE_RESISTANCE'
+  Strength:
+    name: '&cStrength'
+    material: POTION
+    data: 8201 #For calculate potion data use this site: https://minecraft-materials.grahamedgecombe.com/potion-calculator
+    amount: 1
+    slot: 14
+    lore:
+    - '&7Buy an effect:'
+    - '&cStrength'
+    actions: 
+    - 'BUY-EFFECT: INCREASE_DAMAGE'
+  WaterBreath:
+    name: '&cWater Breathing'
+    material: POTION
+    data: 8205 #For calculate potion data use this site: https://minecraft-materials.grahamedgecombe.com/potion-calculator
+    amount: 1
+    slot: 15
+    lore:
+    - '&7Buy an effect:'
+    - '&cWater Breathing'
+    actions:
+    - 'BUY-EFFECT: WATER_BREATHING'
+  border:
+    name: '&7UltimatePets' # The border is all the glass represented by default in the plugin. Feel free to change them.
+    material: STAINED_GLASS_PANE # The material to display in the GUI, Alert: You cannot add more items than one.
+    data: 0 # Useless, don't use this since we don't use the eggs in the border.
+    amount: 1 # The amount of items to display in the GUI
+    slots: # Please select all the slots where you want to display the item in the GUI.
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26

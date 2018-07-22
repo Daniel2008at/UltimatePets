@@ -1,0 +1,151 @@
+###################################################################
+# _________.__                     _____                          # 
+# /   _____/|  |__   ____ ______   /     \   ____   ____  __ __   #
+# \_____  \ |  |  \ /  _ \\____ \ /  \ /  \_/ __ \ /    \|  |  \  #
+# /        \|   Y  (  <_> )  |_> >    Y    \  ___/|   |  \  |  /  #
+#/_______  /|___|  /\____/|   __/\____|__  /\___  >___|  /____/   #
+#       \/      \/       |__|           \/     \/     \/          #
+###################################################################
+
+# In this YAML File you can configure the ShopMenu of the Pet. Remember to list the pet in the config.yml before to do any modify here!
+
+name: '&6Pet GUI' # The name of the GUI
+rows: 5 #The rows are the total of slot that you want into your GUI. Due to Minecraft limitations you can use a maximum of 6 rows.
+
+items:
+  buySheep:
+    name: '&6Buy a baby sheep pet.' # The name of the item. 
+    material: WOOL # The material to use in the GUI
+    data: 0 # Useless. Don't use this.
+    amount: 1 # The amount of items to display in the GUI.
+    slot: 21 # The slot where you want to display your item.
+    lore: # Here you can setup the lore for the Pet. Feel free to add lines.
+    - '&7Buy a pet:'
+    - '&cBaby Sheep'
+    actions:
+    - 'BUY-PET: Sheep' # This action will buy the Sheep Pet if you have money.
+    - 'CLOSE-INVENTORY' # This action will close your inventory after you have bought the Pet.
+  buySilverfish:
+    name: '&6Buy a silverfish pet'
+    material: IRON_INGOT
+    data: 0
+    amount: 1
+    slot: 19
+    lore:
+    - '&7Buy a pet:'
+    - '&cBaby Silverfish'
+    actions:
+    - 'BUY-PET: Silverfish'
+    - 'CLOSE-INVENTORY'
+  buyCow:
+    name: '&6Buy a baby cow pet'
+    material: LEATHER
+    data: 0
+    amount: 1
+    slot: 31
+
+    actions:
+    - 'BUY-PET: Cow'
+    - 'CLOSE-INVENTORY'
+  buyZombie:
+    name: '&6Buy a baby zombie pet'
+    material: ROTTEN_FLESH
+    data: 0
+    amount: 1
+    slot: 20
+    lore:
+    - '&7Buy a pet:'
+    - '&cBaby Zombie'
+    actions:
+    - 'BUY-PET: Zombie'
+    - 'CLOSE-INVENTORY'
+  buyVillager:
+    name: '&6Buy a baby villager pet'
+    material: EMERALD
+    data: 0
+    amount: 1
+    slot: 22
+    lore:
+    - '&7Buy a pet:'
+    - '&cBaby Villager'
+    actions:
+    - 'BUY-PET: Villager'
+    - 'CLOSE-INVENTORY'
+  buyMcow:
+    name: '&6Buy a baby mushroom cow pet'
+    material: RED_MUSHROOM
+    data: 0
+    amount: 1
+    slot: 25
+    lore:
+    - '&7Buy a pet:'
+    - '&cBaby Mushroom Cow'
+    actions:
+    - 'BUY-PET: Mcow'
+    - 'CLOSE-INVENTORY'
+  buyOcelot:
+    name: '&6Buy a baby ocelot pet'
+    material: RAW_FISH
+    data: 0
+    amount: 1
+    slot: 13
+    lore:
+    - '&7Buy a pet:'
+    - '&cBaby Ocelot'
+    actions:
+    - 'BUY-PET: Ocelot'
+    - 'CLOSE-INVENTORY'
+  buyWolf:
+    name: '&6Buy a baby wolf pet'
+    material: BONE
+    data: 0
+    amount: 1
+    slot: 24
+    lore:
+    - '&7Buy a pet:'
+    - '&cBaby Wolf'
+    actions:
+    - 'BUY-PET: Wolf'
+    - 'CLOSE-INVENTORY'
+  buyChicken:
+    name: '&6Buy a baby chicken pet'
+    material: FEATHER
+    data: 0
+    amount: 1
+    slot: 23
+    lore:
+    - '&7Buy a pet:'
+    - '&cBaby Chicken'
+    actions:
+    - 'BUY-PET: Chicken'
+    - 'CLOSE-INVENTORY'
+  border:
+    name: '&7UltimatePets' # The border is all the glass represented by default in the plugin. Feel free to change them.
+    material: STAINED_GLASS_PANE # The material to display in the GUI, Alert: You cannot add more items than one.
+    data: 0 # Useless, don't use this since we don't use the eggs in the border.
+    amount: 1 # The amount of items to display in the GUI
+    slots: # Please select all the slots where you want to display the item in the GUI.
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44

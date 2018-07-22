@@ -1,0 +1,153 @@
+################################################################################
+# _________ .__                                    _____                       #
+# \_   ___ \|  |__ _____    ____    ____   ____   /     \   ____   ____  __ __ #
+# /    \  \/|  |  \\__  \  /    \  / ___\_/ __ \ /  \ /  \_/ __ \ /    \|  |  \#
+# \     \___|   Y  \/ __ \|   |  \/ /_/  >  ___//    Y    \  ___/|   |  \  |  /#
+#  \______  /___|  (____  /___|  /\___  / \___  >____|__  /\___  >___|  /____/#
+#        \/     \/     \/     \//_____/      \/        \/     \/     \/       #
+###############################################################################
+
+# In this YAML File you can edit the Pets available for the change and edit the Lore and their names.
+
+name: '&6Pet GUI' # Name of the GUI
+rows: 5 # The rows are the total of slot that you want into your GUI. Due to Minecraft limitations you can use a maximum of 6 rows.
+
+items:
+  buySheep:
+    name: '&6Change your pet into a baby sheep pet.' # The name of the item
+    material: WOOL # The material of the item
+    data: 0 # Useless. Don't use this since the pets doesn't use the eggs here. Anyways, you change in the data of the eggs but remember to change the metadata for setup correctly.
+    amount: 1 # The amount of items to display in the GUI
+    slot: 21 # The slot where you want to display the item selected
+    lore: # Here you can setup the lore of the item. Feel free to add as many lines you want in the lore.
+    - '&7Change your pet into:'
+    - '&cBaby Sheep'
+    actions:
+    - 'PET-CHANGE: Sheep' # This action will change your actually pet with the Sheep pet. 
+    - 'CLOSE-INVENTORY' # This action will close your inventory after the PET-CHANGE action.
+  buySilverfish:
+    name: '&6Change your pet into a silverfish pet'
+    material: IRON_INGOT
+    data: 0
+    amount: 1
+    slot: 19
+    lore:
+    - '&7Change your pet into:'
+    - '&cBaby Silverfish'
+    actions:
+    - 'PET-CHANGE: Silverfish'
+    - 'CLOSE-INVENTORY'
+  buyCow:
+    name: '&6Change your pet into a baby cow pet'
+    material: LEATHER
+    data: 0
+    amount: 1
+    slot: 31
+    lore:
+    - '&7Change your pet into:'
+    - '&cBaby Cow'
+    actions:
+    - 'PET-CHANGE: Cow'
+    - 'CLOSE-INVENTORY'
+  buyZombie:
+    name: '&6Change your pet into a baby zombie pet'
+    material: ROTTEN_FLESH
+    data: 0
+    amount: 1
+    slot: 20
+    lore:
+    - '&7Change your pet into:'
+    - '&cBaby Zombie'
+    actions:
+    - 'PET-CHANGE: Zombie'
+    - 'CLOSE-INVENTORY'
+  buyVillager:
+    name: '&6Change your pet into a baby villager pet'
+    material: EMERALD
+    data: 0
+    amount: 1
+    slot: 22
+    lore:
+    - '&7Change your pet into:'
+    - '&cBaby Villager'
+    actions:
+    - 'PET-CHANGE: Villager'
+    - 'CLOSE-INVENTORY'
+  buyMcow:
+    name: '&6Change your pet into a baby mushroom cow pet'
+    material: RED_MUSHROOM
+    data: 0
+    amount: 1
+    slot: 25
+    lore:
+    - '&7Change your pet into:'
+    - '&cBaby Mushroom Cow'
+    actions:
+    - 'PET-CHANGE: Mcow'
+    - 'CLOSE-INVENTORY'
+  buyOcelot:
+    name: '&6Change your pet into a baby ocelot pet'
+    material: RAW_FISH
+    data: 0
+    amount: 1
+    slot: 13
+    lore:
+    - '&7Change your pet into:'
+    - '&cBaby Ocelot'
+    actions:
+    - 'PET-CHANGE: Ocelot'
+    - 'CLOSE-INVENTORY'
+  buyWolf:
+    name: '&6Change your pet into a baby wolf pet'
+    material: BONE
+    data: 0
+    amount: 1
+    slot: 24
+    lore:
+    - '&7Change your pet into:'
+    - '&cBaby Wolf'
+    actions:
+    - 'PET-CHANGE: Wolf'
+    - 'CLOSE-INVENTORY'
+  buyChicken:
+    name: '&6Change your pet into a baby chicken pet'
+    material: FEATHER
+    data: 0
+    amount: 1
+    slot: 23
+    lore:
+    - '&7Change your pet into:'
+    - '&cBaby Chicken'
+    actions:
+    - 'PET-CHANGE: Chicken'
+    - 'CLOSE-INVENTORY'
+  border:
+    name: '&7UltimatePets' # The border is all the glass represented by default in the plugin. Feel free to change them.
+    material: STAINED_GLASS_PANE # The material to display in the GUI, Alert: You cannot add more items than one.
+    data: 0 # Useless, don't use this since we don't use the eggs in the border.
+    amount: 1 # The amount of items to display in the GUI
+    slots: # Please select all the slots where you want to display the item in the GUI.
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44

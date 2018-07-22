@@ -1,0 +1,46 @@
+#####################################################################
+#__________              ___________ _____  _____              __   #
+#\______   \__ __ ___.__.\_   _____// ____\/ ____\____   _____/  |_ #
+# |    |  _/  |  <   |  | |    __)_\   __\\   __\/ __ \_/ ___\   __\#
+# |    |   \  |  /\___  | |        \|  |   |  | \  ___/\  \___|  |  #
+# |______  /____/ / ____|/_______  /|__|   |__|  \___  >\___  >__|  #
+#        \/       \/             \/                  \/     \/      #
+#####################################################################
+
+# In this YAML File you can configure the colors and the name of the GUI in the Buy Effect menu.
+
+name: '&6Buy effect' # Name of the GUI
+rows: 1 # The rows are the total of slot that you want into your GUI. Due to Minecraft limitations you can use a maximum of 6 rows.
+
+items:
+  info:
+    name: '%effect_name' # This returns the placeholder of the effect selected.
+    material: BOOK # The material to display in the GUI
+    data: 0 # No need to use this, Anyways is the data of item.
+    amount: 1 # The total of item that you want in the GUI
+    slot: 4 # The slot where you want to display the item selected
+    lore: # Here you can configure the lore of your item, you can use infinite lores and please do not delete these placeholder under this comment.
+    - '&cPrice: &6%effect_price' # The price of the effect selected.
+    - '&cLevel: &6%effect_level' # The level of the effect selected.
+    actions:
+  buyEffect:
+    name: '&cBuy effect'
+    material: STAINED_GLASS_PANE
+    data: 5
+    amount: 1
+    slot: 2
+    lore:
+    - '&cClicking this item you will buy the effect'
+    actions:
+    - 'BUY-SELECTED-EFFECT' # This action will be executed when you use the buy effect, these 2 action will buy for you the selected effect and then will close the GUI.
+    - 'CLOSE-INVENTORY'
+  cancelBuy:
+    name: '&cCancel effect buy'
+    material: STAINED_GLASS_PANE
+    data: 14
+    amount: 1
+    slot: 6
+    lore:
+    - '&cClick this item for cancel the buy action'
+    actions:
+    - 'CLOSE-INVENTORY' # With this action you will cancel the process without any action and the plugin will close the GUI.
