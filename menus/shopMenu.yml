@@ -43,7 +43,9 @@ items:
     data: 0
     amount: 1
     slot: 31
-
+    lore:
+    - '&7Buy a pet:'
+    - '&cBaby Cow'
     actions:
     - 'BUY-PET: Cow'
     - 'CLOSE-INVENTORY'

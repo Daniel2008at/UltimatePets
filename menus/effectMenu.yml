@@ -22,7 +22,7 @@ items:
     lore:  #Here you can configure the lore of your item, you can use infinite lores for this.
     - '&7Buy an effect:'
     - '&cRegeneration'
-    actions: 
+    actions:
     - 'BUY-EFFECT: REGENERATION' # This action will execute the buy of the Regeneration effect.
   Resistance:
     name: '&cResistance'
@@ -33,7 +33,7 @@ items:
     lore:
     - '&7Buy an effect:'
     - '&cResistance'
-    actions: 
+    actions:
     - 'BUY-EFFECT: DAMAGE_RESISTANCE'
   Speed:
     name: '&cSpeed'
@@ -44,7 +44,7 @@ items:
     lore:
     - '&7Buy an effect:'
     - '&cSpeed'
-    actions: 
+    actions:
     - 'BUY-EFFECT: SPEED'
   Fresitance:
     name: '&cFire Resistance'
@@ -55,7 +55,7 @@ items:
     lore:
     - '&7Buy an effect:'
     - '&cFire Resistance'
-    actions: 
+    actions:
     - 'BUY-EFFECT: FIRE_RESISTANCE'
   Strength:
     name: '&cStrength'
@@ -66,7 +66,7 @@ items:
     lore:
     - '&7Buy an effect:'
     - '&cStrength'
-    actions: 
+    actions:
     - 'BUY-EFFECT: INCREASE_DAMAGE'
   WaterBreath:
     name: '&cWater Breathing'

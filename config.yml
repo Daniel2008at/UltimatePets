@@ -6,20 +6,21 @@
 # |______/ |____/__| |__|__|_|  (____  /__|  \___  >____|    \___  >__| /____  > \_______ \ /\ \_____  /#
 #                            \/     \/          \/              \/          \/          \/ \/       \/  #
 #########################################################################################################							
-
 # Welcome in the main configuration of UltimatePets and thanks for the purchase!
 
 # Here you can configure some settings of the plugin by adapting it as you desire.
 # Do you need support? Please join our Discord Server to receive help by our support team.
 # Discord Link: https://discord.gg/Q9JrayV 
 
-version: 1 # Don't edit this or you will break the entire plugin!
+version: 3 # Don't edit this or you will break the entire plugin!
 
 # The economyType string is the main payment system to use when a player buys a pet.
 # You can use two types of economy: TokenEnchant and Vault.
-# Use these strings for the economy: TOKENENCHANT - VAULT
+# Use these strings for the economy: TOKENENCHANT - VAULT - NONE
 
 economyType: VAULT
+
+giveEffectsToPet: false
 
 # Here you can decide the type of database to use with the plugin
 # The avaiable databases are: MongoDB,SQLite,MySQL,YAML
@@ -29,7 +30,7 @@ database:
   type: SQLITE
   YAML:
     type: UUID #Types: UUID - USERNAME
-    folder: 'pets' 
+    folder: 'pets'
   SQLite:
     fileName: 'pets'
   MySQL:
@@ -45,20 +46,20 @@ database:
     password: ''
     database: 'ultimatepets'
     port: 27017
-    
-# Here you can customize the messages of the pet's display name, the maximum level that a pet can have and the respawn time.   
-    
+
+    # Here you can customize the messages of the pet's display name, the maximum level that a pet can have and the respawn time.   
+
 petInfo:
-  defaultName: '%player_name''s pet'    
+  defaultName: '%player_name''s pet'
   nameFormat: '&8[&4%pet_level&8] %pet_name'
   deathPetRespawnTime: 100 # In seconds
-   
+
 # Here you can customize the healthUpgrade for the pets.
 
 healthUpgrade:
   healthPerTime: 20.0
   price: 1000.0
-  
+
 # We have reached the most important settings of the plugin.
 # Please look here for more information.
 
@@ -126,8 +127,8 @@ pets:
     baseHealth: 20
     maxHealth: 100
     speed: 1.75
-# Note: After you have listed the pet here you need to go in the "menus" folder and open the shopMenu.yml file for setup that correctly. 
- 
+  # Note: After you have listed the pet here you need to go in the "menus" folder and open the shopMenu.yml file for setup that correctly. 
+
 potionEffects:
   DAMAGE_RESISTANCE:
     name: '&cDamage Resistance' # The title of the effect, you can use Bukkit colors to customize them
@@ -163,18 +164,22 @@ potionEffects:
     levels:
       '1': 1000
       '2': 2000
-      
+
 # Note: After you have listed the effect here you need to go in the "menus" folder and open the effectMenu.yml file for setup that correctly.
 
-blacklistedWords:
-- 'fuck'
-- 'dick'
+blacklistedNames:
+  type: BLACKLIST
+  list:
+  - 'fuck'
+  - 'dick'
 
 # Blacklist a word that a player cannot use when that use the /pet name command!
 
 blacklistedWorlds:
-- 'blacklisted_world1'
-- 'another_blacklisted_world'
+  type: BLACKLIST
+  list:
+  - 'blacklisted_world1'
+  - 'another_blacklisted_world'
 
 # Blacklist a world where your players cannot use their pets.
 

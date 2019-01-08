@@ -34,7 +34,7 @@ items:
     - 'PET-TOGGLE' # This action will remove your pet and get him away from you.
     - 'CLOSE-INVENTORY' # This action will close your inventory.
   petDeath:
-    name: '&6Your pet is dead' 
+    name: '&6Your pet is dead'
     material: REDSTONE_BLOCK
     data: 0
     amount: 1

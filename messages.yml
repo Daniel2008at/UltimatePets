@@ -7,7 +7,7 @@
 #        \/     \/     \/     \/      \//_____/      \/     \/   #
 ##################################################################
 
-version: 1 # Don't edit this or you will break the entire plugin!
+version: 4 # Don't edit this or you will break the entire plugin!
 
 prefix: '&8Ultimate&7Pets &9 > &3'
 
@@ -17,6 +17,7 @@ messages:
   hitYourPet: '&cYou cannot hit your pet.'
   toBlacklistedWorld: '&cYour pet was despawned because you''ve teleported to a blacklisted world'
   effectBuy:
+    noPermission: '&cYou don''t have the permission to buy this effect.'
     maxLevelReached: '&cYou have already reached the max level for this effect'
     notEnoughtMoney: '&cYou don''t have enought money for buy %effect_name effect.'
     upgradedEffect: '&aYou''ve upgraded the %effect_name to %effect_level.'
@@ -105,6 +106,17 @@ messages:
       alreadyHasEffect: '&cThe specified player already has this effect.'
       effectLevelNoExist: '&cThe specified level doesn''t exist.'
       givedEffect: '&aEffect gived!'
+    convert:
+      use: '&c/up convert <database-type>'
+      usingDB: '&cYou cannot convert data to the database you are using.'
+      noDatabase: '&cThe type of database you''ve selected isn''t compatible with UltimatePets.'
+      error: '&cAn error occurred during conversion, please check console for more info.'
+      successful: '&aConverted database successfully in %time ms!'
+    changeName:
+      use: '&c/up changeName <player> <name>'
+      playerNoOnline: '&cThe player isn''t online.'
+      playerNoPet: '&cThe specified player doesn''t have a pet.'
+      changed: '&aName changed'
     reload: '&aConfiguration reloaded in %time ms.'
     help:
     - '&3Ultimate&7Pets &6Admin commands'
@@ -113,3 +125,4 @@ messages:
     - '&3/up info - &7Get info of a pet'
     - '&3/up giveEffect - &7Give an effect to a pet'
     - '&3/up reload - &7Reload'
+    - '&3/up convert - &7Convert database'
